@@ -1,4 +1,4 @@
-# SplitKare 💸
+# SplitKare?💸
 
 **SplitKare** is a simple and intuitive bill splitter tool made with HTML, CSS, and JavaScript. It helps users divide expenses among friends or groups—optionally including a tip—making group payments fair and quick.
 
