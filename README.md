@@ -30,7 +30,8 @@
 5. View the split, and reset anytime.
 
 🤝 Contributing
+
 Contributions are welcome! If you'd like to improve this project, please fork the repository and create a pull request with your changes.
 
 🌻Thank you for your visit :)
-⭐Star the project if you like it!
+Star the project if you like it!
