@@ -1,7 +1,7 @@
 💸 SplitKare
 
 SplitKare is a simple and intuitive bill-splitting tool built with HTML, CSS, and JavaScript. It helps users quickly and fairly divide expenses among friends or groups, with an optional tip.
-
+**************************************************
 ✨ Features
 
 1.Enter total bill amount
@@ -47,5 +47,6 @@ HTML5 · CSS3 · JavaScript (Vanilla)
 Contributions are welcome. Fork the repository and submit a pull request.
 
 🌻 Thank you for visiting! If you like the project, don’t forget to ⭐ star it.
+
 
 
