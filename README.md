@@ -1,53 +1,32 @@
 💸 SplitKare
 
-SplitKare is a simple and intuitive bill-splitting web app built using HTML, CSS, and JavaScript. It helps users quickly and fairly split expenses among friends or groups, with optional tip calculation.
+SplitKare is a simple and intuitive bill-splitting tool built with HTML, CSS, and JavaScript. It helps users quickly and fairly divide expenses among friends or groups, with an optional tip.
 
 ✨ Features
-
+*****************************************
 Enter total bill amount
-
-Select a predefined tip or add a custom tip percentage (optional)
-
+Choose or add a custom tip percentage (optional)
 Specify number of people
-
-Clear breakdown of:
-
+View a clear breakdown:
 Tip amount
-
 Total bill (including tip)
-
-Amount per person
-
-Reset button to start fresh
-
-Responsive design
-
-Animated welcome banner
+Per person payment
+Reset button to start over
+Responsive design with animated welcome banner
 
 🛠️ Tech Stack
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
+******************************************
+HTML5 · CSS3 · JavaScript (Vanilla)
 
 📝 How to Use
-
-Enter the total bill amount
-
-Choose a tip percentage or enter a custom tip (optional)
-
+Enter the bill amount
+Choose a tip or add a custom one
 Enter the number of people
-
 Click Generate Bill
+View the split and reset anytime
+Add Emails of people you need to send split expense through mails
+click send payment link
 
-View the split details and reset anytime
+Contributions are welcome! Fork the repository and submit a pull request.
 
-🤝 Contributing
-
-Contributions are welcome!
-Feel free to fork the repository and submit a pull request with your improvements.
-
-🌻 Thank you for visiting!
-If you like this project, don’t forget to ⭐ star the repository.
+🌻 Thank you for visiting! If you like the project, don’t forget to ⭐ star it.
