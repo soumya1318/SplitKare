@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #8c66ed;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    animation: slideDown 1s ease forwards;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Container & Cards */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;   /* 🔑 IMPORTANT */
+    padding: 40px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    min-height: 60vmin;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 300px;              /* 🔑 FIXED WIDTH */
+    transition: all 0.3s ease; /* 🔑 PREVENT STRETCH */
+}
+
+h2 {
+    color: #6f3cff;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Input Sections */
+.section {
+    margin-bottom: 20px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.input-icon span {
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+/* Tip Buttons */
+.tip-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tip {
+    padding: 10px;
+    background-color: #9c60ff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tip:hover {
+    background-color: #8c50ff;
+}
+
+.tip.selected {
+    background-color: #6f3cff;
+    border: 2px solid #5a2edb;
+}
+
+.custom-tip,
+.number-of-people {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Buttons */
+.generate-bill-btn,
+.reset-btn,
+.send-mail-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6f3cff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.generate-bill-btn:disabled,
+.reset-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Bill Output */
+.bill-output p {
+    display: flex;                /* 🔑 IMPORTANT */
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Email Section */
+.hidden {
+    display: none;
+}
+
+.email-row {
+    margin-bottom: 15px;
+    animation: slideDown 0.3s ease forwards;
+}
+
+.email-row label {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.email-row input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fafafa;
+}
+
+.send-mail-btn {
+    background-color: #28a745;
+}
+
+.send-mail-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

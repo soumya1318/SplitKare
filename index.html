@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SplitKare?</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero">
+        <h1>Welcome to SplitKare?</h1>
+        <img src="https://cdn.vectorstock.com/i/500p/03/71/hands-with-knife-and-fork-over-plate-ceramic-dish-vector-56120371.jpg"
+            alt="Logo" class="logo" />
+    </header>
+
+    <main class="container">
+        <div class="card bill-input">
+            <h2>Enter Bill Details</h2>
+
+            <div class="section">
+                <label for="bill-amount">Bill Amount</label>
+                <div class="input-icon">
+                    <span>₹</span>
+                    <input id="bill-amount" type="number" placeholder="0.00" />
+                </div>
+            </div>
+
+            <div class="section">
+                <label>Select Tip %</label>
+                <div class="tip-options disabled">
+                    <button class="tip">5%</button>
+                    <button class="tip">10%</button>
+                    <button class="tip">15%</button>
+                    <button class="tip">25%</button>
+                    <button class="tip">50%</button>
+                    <button class="tip">75%</button>
+                </div>
+                <input class="custom-tip" type="number" placeholder="Custom Tip %" disabled />
+            </div>
+
+            <div class="section">
+                <label>Number of People</label>
+                <input class="number-of-people" type="number" placeholder="e.g. 2" disabled />
+            </div>
+
+            <button class="generate-bill-btn" disabled>Generate Bill</button>
+        </div>
+
+        <div class="card bill-output">
+            <h2>Bill Summary</h2>
+            <p>Tip Amount: <span class="tip-amount">₹0.00</span></p>
+            <p>Total Bill: <span class="total">₹0.00</span></p>
+            <p>Each Pays: <span class="each-person-bill">₹0.00</span></p>
+            <button class="reset-btn" disabled>Reset</button>
+        </div>
+
+        <div class="card email-section hidden">
+            <h2>Request Payment</h2>
+            <div id="email-list"></div>
+            <button class="send-mail-btn">Send Payment Links</button>
+        </div>
+    </main>
+
+    <!-- JS Link -->
+    <script src="script.js"></script>
+</body>
+</html>
