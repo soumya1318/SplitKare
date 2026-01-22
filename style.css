@@ -9,7 +9,7 @@ body {
     color: #333;
 }
 
-/* Hero Section */
+/* ================= HERO ================= */
 .hero {
     background-color: #8c66ed;
     color: white;
@@ -28,7 +28,6 @@ body {
 .logo {
     max-width: 100px;
     height: auto;
-    display: block;
     animation: bounce 2s infinite;
 }
 
@@ -38,38 +37,42 @@ body {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
+    0%,100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
 
-/* Container & Cards */
+/* ================= CONTAINER ================= */
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;                 /* 🔑 REQUIRED */
     justify-content: center;
-    align-items: flex-start;   /* 🔑 IMPORTANT */
-    padding: 40px 20px;
+    align-items: flex-start;
     gap: 30px;
-    flex-wrap: wrap;
-    min-height: 60vmin;
+    padding: 40px 20px;
 }
 
+/* ================= CARDS ================= */
 .card {
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 25px;
-    width: 300px;              /* 🔑 FIXED WIDTH */
-    transition: all 0.3s ease; /* 🔑 PREVENT STRETCH */
+    width: 300px;                    /* 🔑 FIXED WIDTH */
+    transition: all 0.3s ease;
 }
 
+/* Ensure email card same size */
+.email-section {
+    width: 300px;
+}
+
+/* ================= HEADINGS ================= */
 h2 {
     color: #6f3cff;
-    margin-bottom: 20px;
-    margin-top: 0;
+    margin: 0 0 20px 0;
 }
 
-/* Input Sections */
+/* ================= INPUT SECTIONS ================= */
 .section {
     margin-bottom: 20px;
 }
@@ -102,7 +105,7 @@ input {
     background: transparent;
 }
 
-/* Tip Buttons */
+/* ================= TIP BUTTONS ================= */
 .tip-options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -137,7 +140,7 @@ input {
     font-size: 16px;
 }
 
-/* Buttons */
+/* ================= BUTTONS ================= */
 .generate-bill-btn,
 .reset-btn,
 .send-mail-btn {
@@ -158,15 +161,15 @@ input {
     cursor: not-allowed;
 }
 
-/* Bill Output */
+/* ================= BILL OUTPUT ================= */
 .bill-output p {
-    display: flex;                /* 🔑 IMPORTANT */
+    display: flex;
     justify-content: space-between;
     font-weight: 600;
     margin: 10px 0;
 }
 
-/* Email Section */
+/* ================= EMAIL SECTION ================= */
 .hidden {
     display: none;
 }
@@ -186,8 +189,8 @@ input {
 .email-row input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 6px;
+    border: 1px solid #ccc;
     background: #fafafa;
 }
 
@@ -199,14 +202,15 @@ input {
     background-color: #218838;
 }
 
-/* Responsive */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .card {
+    .card,
+    .email-section {
         width: 100%;
         max-width: 350px;
     }
