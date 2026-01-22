@@ -45,13 +45,13 @@ Uses Node.js + Express to handle server requests
 
 2.Navigate to backend folder
 
-3.Run:npm install
+3.Run: npm install
 
-4.Create a .env file and add:
+4.Create a .env file and add: 
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_email_password
 
-5.Start the server:
+5.Start the server: 
 npm start
 ***************************************************
 🤝 Contributing
@@ -59,4 +59,5 @@ npm start
 Contributions are welcome. Fork the repository and submit a pull request.
 
 🌻 Thank you for visiting! If you like the project, don’t forget to ⭐ star it.
+
 
