@@ -1,7 +1,7 @@
 💸 SplitKare
 
 SplitKare is a simple and intuitive bill-splitting tool built with HTML, CSS, and JavaScript. It helps users quickly and fairly divide expenses among friends or groups, with an optional tip.
-**************************************************
+***************************************************
 ✨ Features
 
 1.Enter total bill amount
@@ -10,43 +10,49 @@ SplitKare is a simple and intuitive bill-splitting tool built with HTML, CSS, an
 
 3.Specify number of people
 
-4.Clear breakdown of:
+4.Click generate bill
 
+5.Clear breakdown:
   -> Tip amount
-
   -> Total bill (including tip)
-
   -> Per person payment
+  
+6.Reset button to start over
 
-5.Reset button to start over
+7.Responsive design with animated welcome banner
 
-6.Responsive design with animated welcome banner
-
-7.Add participant emails and send payment links
-**************************************************
+8.Add participant emails and send payment links
+***************************************************
 🛠️ Tech Stack
 
-HTML5 · CSS3 · JavaScript (Vanilla)
-************************************************
-📝 How to Use
+Frontend: HTML5 · CSS3 · JavaScript (Vanilla)
+Backend: Node.js · Express · Nodemailer
+***************************************************
+🧩 Backend Functionality
 
-1.Enter the bill amount
+Uses Node.js + Express to handle server requests
 
-2.Choose a tip or add a custom one
+-> Integrates Nodemailer to send payment links via email
 
-3.Enter the number of people
+-> Receives email list and bill split details from frontend
 
-4.Click Generate Bill
+-> Sends customized emails to all participants
 
-4.View the split
+***************************************************
+🚀 Installation (Backend)
 
-5.Add emails and click Send Payment Link
-*************************************************
+1.Clone the repository 
+2.Navigate to backend folder
+3.Run:
+  >npm install
+4.Create a .env file and add:
+  >EMAIL_USER=your_email@gmail.com
+  >EMAIL_PASS=your_email_password
+5.Start the server:
+  >npm start
+***************************************************
 🤝 Contributing
 
 Contributions are welcome. Fork the repository and submit a pull request.
 
 🌻 Thank you for visiting! If you like the project, don’t forget to ⭐ star it.
-
-
-
