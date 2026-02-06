@@ -41,6 +41,9 @@ app.post("/send-bill", async (req, res) => {
     res.status(500).json({ success: false, message: "Email failed" });
   }
 });
+app.get("/", (req, res) => {
+  res.send("SplitKare Backend is running");
+});
 
 
 app.listen(5000, () => {
